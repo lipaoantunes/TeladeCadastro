@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Cadastro de Funcionários</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link type="text/css" rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/x-icon" href="login.png"/>
+        <script src="https://use.fontawesome.com/09b1330d8d.js"></script>
+        <script src="script.js"></script>
+    </head>
+<body>
+    <form name="form" method="POST" action="" >
+    
+        <div class="main-sign-up">
+            <div class="left-sign-up">
+                <h1>Sign Up<br>And join our team</h1>
+                <img src="arquivo.svg" class="left-sign-up-image" alt="arquivo animação">
+            </div>
+
+        <div class="right-sign-up">
+            <div class="card-login">
+
+                <h1>SIGN UP</h1>
+
+                    <div class="textfield">
+                        <label for="username">Username</label>
+                        <i class="fa fa-user-circle-o icon-username" aria-hidden="true"></i>
+                        <input type="text" id="username" placeholder="Username" required>
+                    </div>
+
+                    <div class="textfield">
+                        <label for="password">Password</label>
+                        <i class="fa fa-lock icon-password" aria-hidden="true"></i>
+                        <img class="image-open" id="icon" onclick="mostrarSenha()" 
+                        width="20" src="open.png" alt="">
+                        <input id="password" type="password" placeholder="Password" required>  
+                    </div>
+
+                    <div class="textfield">
+                        <label for="cpf">CPF</label>
+                        <i class="fa fa-file-text-o icon-cpf" aria-hidden="true"></i>
+                        <input type="text" autocomplete="off" onkeypress="$(this).mask('000.000.000-00');"
+                        maxlength="14" id="cpf" name="cpf" 
+                        placeholder="Ex.: 000.000.000-00" required>
+                    </div>
+
+                    <div class="textfield">
+                        <label for="address">Address</label>
+                        <i class="fa fa-map-marker icon-address" aria-hidden="true"></i>
+                        <input type="text" id="address" maxlength="50" placeholder="Address">
+                    </div>
+
+                    <div class="textfield">
+                        <label for="telephone">Telephone</label>
+                        <i class="fa fa-phone icon-telephone" aria-hidden="true"></i>
+                        <input type="text" id="telephone" placeholder="Ex.: (00) 0000-0000" maxlength="15">
+                    </div>
+
+                    <input class="btn-login" type="button" value="Login">
+                </div>
+            </div>
+        </div>
+     </form>  
+</body>
+</html>
